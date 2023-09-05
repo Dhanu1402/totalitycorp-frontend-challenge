@@ -1,5 +1,4 @@
 import './App.css';
-
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
 import Home from './pages/Home';
