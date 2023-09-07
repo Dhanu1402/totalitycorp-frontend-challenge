@@ -2391,6 +2391,12 @@
         }
       ],
       "id": 3
+    },
+    {
+      "email": "dhanukumar2000@gmail.com",
+      "password": "Qwert1234",
+      "addresses": [],
+      "id": 4
     }
   ],
   "cart": [
@@ -2413,26 +2419,6 @@
       "quantity": 1,
       "user": 1,
       "id": 1
-    },
-    {
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 3,
-      "id": 3
     }
   ],
   "orders": [
@@ -2770,6 +2756,60 @@
       },
       "status": "pending",
       "id": 5
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 3
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "dhanukumar2000@gmail.com",
+        "password": "Qwert1234",
+        "addresses": [
+          {
+            "name": "Dhanu Kumar",
+            "email": "dhanukumar2000@gmail.com",
+            "phone": "08009385113",
+            "street": "154b/310a bai ka bagh",
+            "city": "Prayagraj",
+            "state": "uttar pradesh",
+            "pinCode": "211003"
+          }
+        ],
+        "id": 3
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Dhanu Kumar",
+        "email": "dhanukumar2000@gmail.com",
+        "phone": "08009385113",
+        "street": "154b/310a bai ka bagh",
+        "city": "Prayagraj",
+        "state": "uttar pradesh",
+        "pinCode": "211003"
+      },
+      "status": "pending",
+      "id": 6
     }
   ]
 }
