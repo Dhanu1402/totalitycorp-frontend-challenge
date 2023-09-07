@@ -51,7 +51,6 @@ export const fetchBrandsAsync = createAsyncThunk(
     return response.data;
   }
 );
-
 export const fetchCategoriesAsync = createAsyncThunk(
   'product/fetchCategories',
   async () => {
@@ -64,11 +63,7 @@ export const fetchCategoriesAsync = createAsyncThunk(
 export const productSlice = createSlice({
   name: 'product',
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchAllProductsAsync.pending, (state) => {
@@ -110,14 +105,11 @@ export const productSlice = createSlice({
   },
 });
 
-export const { increment } = productSlice.actions;
+// export const {  } = productSlice.actions;
 
 export const selectAllProducts = (state) => state.product.products;
-
 export const selectBrands = (state) => state.product.brands;
-
 export const selectCategories = (state) => state.product.categories;
-
 export const selectProductById = (state) => state.product.selectedProduct;
 
 export const selectTotalItems = (state) => state.product.totalItems;
