@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
+
 import { selectLoggedInUser, createUserAsync } from '../authSlice';
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 
 export default function Signup() {
   const dispatch = useDispatch();
-
   const user = useSelector(selectLoggedInUser);
 
   const {
@@ -15,6 +15,7 @@ export default function Signup() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   console.log(errors);
 
   return (
@@ -38,7 +39,11 @@ export default function Signup() {
             className="space-y-6"
             onSubmit={handleSubmit((data) => {
               dispatch(
-                createUserAsync({ email: data.email, password: data.password })
+                createUserAsync({
+                  email: data.email,
+                  password: data.password,
+                  addresses: [],
+                })
               );
               console.log(data);
             })}

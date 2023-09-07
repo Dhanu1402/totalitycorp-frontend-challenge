@@ -12,16 +12,14 @@ import { useForm } from 'react-hook-form';
 
 export default function Login() {
   const dispatch = useDispatch();
-
   const error = useSelector(selectError);
-
   const user = useSelector(selectLoggedInUser);
-
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   console.log(errors);
 
   return (
@@ -48,8 +46,6 @@ export default function Login() {
               );
             })}
             className="space-y-6"
-            action="#"
-            method="POST"
           >
             <div>
               <label
